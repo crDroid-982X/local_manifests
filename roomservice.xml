@@ -3,7 +3,7 @@
 
   <!-- Replace crDroidOTA with unofficial one -->
   <remove-project name="crdroidandroid/android_vendor_crDroidOTA" />
-  <project path="vendor/crDroidOTA" name="crDroid-982X/OTA" remote="github" />
+  <project path="vendor/crDroidOTA" name="crDroid-982X/OTA" remote="github" revision="main" />
   
   <!-- 982X Trees -->
   <project path="device/samsung/exynos9820-common" remote="github" name="crDroid-982X/android_device_samsung_exynos9820-common" revision="13.0" />
