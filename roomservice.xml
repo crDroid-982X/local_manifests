@@ -26,7 +26,7 @@
     <project name="proprietary_vendor_samsung_exynos9820-common"path="vendor/samsung/exynos9820-common" remote="vendor"       revision="lineage-20" />
 
     <!--Kernel Tree-->
-    <project path="kernel/samsung/exynos9820" remote="github" name="crDroid-982X/android_kernel_samsung_exynos9820"           revision="android-13-upstream" />
+    <project path="kernel/samsung/exynos9820" remote="github" name="crDroid-982X/android_kernel_samsung_exynos9820"           revision="lineage-20" />
 
     <!-- Dependencies -->
     <project name="android_device_samsung_slsi_sepolicy"               path="device/samsung_slsi/sepolicy"          remote="dependencies"  revision="lineage-20" />
