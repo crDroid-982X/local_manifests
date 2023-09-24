@@ -2,10 +2,8 @@
 <manifest>
 
     <!--Remotes-->
-    <remote name="source"          fetch="https://github.com/awakened1712"/>
-    <remote name="mtg"             fetch="https://gitlab.com/MindTheGapps"/>
-    <remote name="rice"            fetch="https://github.com/ricedroidOSS"/>
-    <remote name="vendor"          fetch="https://github.com/LeDrew2017"/>
+    <remote name="vendor"          fetch="https://github.com/TheMuppets"/>
+    <remote name="dependencies"    fetch="https://github.com/LineageOS"/>
 
     <!--Devices Trees-->
     <project path="device/samsung/d2x" remote="github" name="crDroid-982X/android_device_samsung_d2x" revision="lineage-20" />
@@ -15,36 +13,29 @@
     <project path="device/samsung/beyond1lte" remote="github" name="crDroid-982X/android_device_samsung_beyond1lte" revision="lineage-20" />
     <project path="device/samsung/beyond0lte" remote="github" name="crDroid-982X/android_device_samsung_beyond0lte" revision="lineage-20" />
     <project path="device/samsung/beyondx" remote="github" name="crDroid-982X/android_device_samsung_beyondx" revision="lineage-20" />
-    <project path="device/samsung/exynos9820-common" remote="github" name="awakened1712/android_device_samsung_exynos9820-common" revision="android-13" />
+    <project path="device/samsung/exynos9820-common" remote="github" name="crDroid-982X/android_device_samsung_exynos9820-common" revision="lineage-20" />
 
     <!--Vendors Trees-->
-    <project name="proprietary_vendor_samsung"                  path="vendor/samsung"                   remote="vendor"       revision="lineage-20" />
+    <project name="proprietary_vendor_samsung_beyond0lte"       path="vendor/samsung/beyond0lte"        remote="vendor"       revision="lineage-20" />
+    <project name="proprietary_vendor_samsung_beyond1lte"       path="vendor/samsung/beyond1lte"        remote="vendor"       revision="lineage-20" />
+    <project name="proprietary_vendor_samsung_beyond2lte"       path="vendor/samsung/beyond2lte"        remote="vendor"       revision="lineage-20" />
+    <project name="proprietary_vendor_samsung_beyondx"          path="vendor/samsung/beyondx"           remote="vendor"       revision="lineage-20" />
+    <project name="proprietary_vendor_samsung_d1"               path="vendor/samsung/d1"                remote="vendor"       revision="lineage-20" />
+    <project name="proprietary_vendor_samsung_d2s"              path="vendor/samsung/d2s"               remote="vendor"       revision="lineage-20" />
+    <project name="proprietary_vendor_samsung_d2x"              path="vendor/samsung/d2x"               remote="vendor"       revision="lineage-20" />
+    <project name="proprietary_vendor_samsung_exynos9820-common"path="vendor/samsung/exynos9820-common" remote="vendor"       revision="lineage-20" />
 
     <!--Kernel Tree-->
-    <project name="android_kernel_samsung_exynos9820"           path="kernel/samsung/exynos9820"        remote="source"         revision="android-13" />
+    <project path="kernel/samsung/exynos9820" remote="github" name="crDroid-982X/android_kernel_samsung_exynos9820"           revision="android-13-upstream" />
 
     <!-- Dependencies -->
-    <project name="android_device_samsung_slsi_sepolicy"        path="device/samsung_slsi/sepolicy"     remote="source"         revision="android-13" />
-    <project name="android_hardware_samsung"                    path="hardware/samsung"                 remote="source"         revision="android-13" />
-
-    <!-- GApps -->
-    <project name="vendor_gapps"                                path="vendor/gapps"                     remote="mtg"            revision="tau" />
-
-    <!-- frameworks/base -->
-    <remove-project name="crdroidandroid/android_frameworks_base" />
-    <project name="android_frameworks_base"                     path="frameworks/base"                  remote="source"         revision="crdroid-13" />
-
-    <!-- frameworks/native -->
-    <remove-project name="crdroidandroid/android_frameworks_native" />
-    <project name="android_frameworks_native"                   path="frameworks/native"                remote="source"         revision="crdroid-13" />
-
-    <!-- packages/apps/Launcher3 -->
-    <remove-project name="crdroidandroid/android_packages_apps_Launcher3" />
-    <project name="android_packages_apps_Launcher3"             path="packages/apps/Launcher3"          remote="source"         revision="crdroid-13"/>
-
-    <!-- platform/extern/zlib -->
-    <remove-project name="platform/external/zlib" />
-    <project name="android_external_zlib-ng"                    path="external/zlib"                    remote="rice"           revision="thirteen" />
+    <project name="android_device_samsung_slsi_sepolicy"               path="device/samsung_slsi/sepolicy"          remote="dependencies"  revision="lineage-20" />
+    <project name="android_hardware_samsung"                           path="hardware/samsung"                      remote="dependencies"  revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_graphics"      path="device/samsung_slsi-linaro/graphics"   remote="dependencies"  revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_config"        path="device/samsung_slsi-linaro/config"     remote="dependencies"  revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_exynos"        path="device/samsung_slsi-linaro/exynos"     remote="dependencies"  revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_openmax"       path="device/samsung_slsi-linaro/openmax"    remote="dependencies"  revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_exynos5"       path="device/samsung_slsi-linaro/exynos5"    remote="dependencies"  revision="lineage-20" />
     
     <!-- Replace crDroidOTA with unofficial one -->
     <remove-project name="crdroidandroid/android_vendor_crDroidOTA" />
