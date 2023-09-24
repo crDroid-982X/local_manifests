@@ -36,6 +36,9 @@
     <project name="android_hardware_samsung_slsi-linaro_exynos"        path="device/samsung_slsi-linaro/exynos"     remote="dependencies"  revision="lineage-20" />
     <project name="android_hardware_samsung_slsi-linaro_openmax"       path="device/samsung_slsi-linaro/openmax"    remote="dependencies"  revision="lineage-20" />
     <project name="android_hardware_samsung_slsi-linaro_exynos5"       path="device/samsung_slsi-linaro/exynos5"    remote="dependencies"  revision="lineage-20" />
+
+    <!-- Kprofiles -->
+    <project path="packages/apps/KProfiles" remote="github"            name="CannedShroud/android_packages_apps_KProfiles"                 revision="thirteen" 
     
     <!-- Replace crDroidOTA with unofficial one -->
     <remove-project name="crdroidandroid/android_vendor_crDroidOTA" />
